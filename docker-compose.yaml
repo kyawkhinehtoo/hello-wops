@@ -4,14 +4,11 @@ services:
   mongodb:
     container_name: mongodb_service
     image: "mongo:latest"
-    ports:
-      - 27017:27017
 
   redis:
     container_name: redis_service
     image: "redis:latest"
-    ports:
-      - 6379:6379
+
   app:
     container_name: hello-wops
     working_dir: /app
